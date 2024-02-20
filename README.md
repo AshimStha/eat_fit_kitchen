@@ -1,4 +1,4 @@
-# Some changes from last time
+# Changes and User Guidelines
 
 ## Local modules
 The Products folder was added with the separate file configurations for the routes and app functions.
