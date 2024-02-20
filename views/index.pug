@@ -1,0 +1,67 @@
+extends layout
+
+block main-content 
+  // the hero section    
+  section.hero
+    div.hero-content
+      h1 Welcome to Eat Fit Kitchen
+      p Embark on a journey towards a healthier you with our selection of wholesome foods and nourishing recipes. Discover the power of balanced nutrition and make every meal a celebration of vitality and well-being. Let us guide you on the path to a vibrant lifestyle, where every bite fuels your body and energizes your spirit.
+      .hero-buttons
+        a(href="#") Learn More
+        a(href="#") Contact Us
+
+  // the highlights section
+  section.highlights
+    div.highlights_container
+      h2 Our Services
+      .highlight-cards
+        .highlight-card
+          img(src="images/tracking.jpg" alt="Highlight 1")
+          h3 Everything Tracked
+          p Our service also includes tracking the calories intake by our customer that can be used for insights
+        .highlight-card
+          img(src="images/tastyHealthy.jpg" alt="Highlight 2")
+          h3 Fresh and Tasty
+          p Our products are curated from local farms and prepared to bring the joy of tastefull dieting 
+        .highlight-card
+          img(src="images/groupWorkout.jpg" alt="Highlight 3")
+          h3 Workouts and Trainings
+          p Customers can also sign up for daily workouts and training sessions
+
+  // the banner section
+  section.banner
+    div.banner_container
+      .banner-content
+        .banner-text
+          h2 Discover Our Products
+          p Explore the latest additions for this New Year's season and get 30% off your first 3 purchases.
+          a.btn(href="#") Shop Now
+        .banner-image
+          img(src="images/banner.jpg" alt="Banner Image")
+
+  // the products section
+  section.products
+    div.product_container
+      h2 Our Best Sellers
+      .product-list
+        .product
+          img(src="images/tracking.jpg" alt="Product 1")
+          h3 Product 1
+          p Description of product 1.
+          p Ingredients
+          span.price $19.99
+          button Add to Cart
+        .product
+          img(src="images/tracking.jpg" alt="Product 2")
+          h3 Product 2
+          p Description of product 2.
+          p Ingredients
+          span.price $24.99
+          button Add to Cart
+        .product
+          img(src="images/tracking.jpg" alt="Product 3")
+          h3 Product 3
+          p Description of product 3.
+          p Ingredients
+          span.price $29.99
+          button Add to Cart

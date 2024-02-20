@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title} | Your Fit Kitchen
+    block scripts
+      // css style link
+      link(rel="stylesheet" type="text/css" href="../css/styles.css")
+      // google fonts link
+      link(rel="preconnect" href="https://fonts.gstatic.com", crossorigin)
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet")      
+      link(href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" rel="stylesheet")
+  body
+    // The navigation menu section
+    header
+      // Logo
+      div#logo
+        a.web_logo(href='/') EFK
+      // Navigation menu
+      nav#nav_menu
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='#') About
+          li
+            a(href='#') Services
+          li
+            a(href='/products') Products
+          li
+            a(href='#') Contact
+      // buttons
+      div#nav_btns
+        a#login_btn(href='#') Log In
+        a#signup_btn(href='#') Sign Up
+        a#cart_btn(href='#') <i class="ri-shopping-cart-2-fill"></i>
+
+    // The main content
+    main#main
+      block main-content
+
+    // The footer section
+    footer
+      .ftr-socials
+        ul#ftr-socials-list
+          li.social-icon
+            a
+              i <i class="ri-facebook-circle-fill"></i>
+          li.social-icon
+            a
+              i <i class="ri-instagram-fill"></i>
+          li.social-icon
+            a
+              i <i class="ri-youtube-fill"></i>
+      .ftr-nav-links
+        ul#ftr-link
+          li.list-item Products
+          li.list-item Services
+          li.list-item Career
+          li.list-item Legal Policy
+          li.list-item Contact
+      .copyright-text
+        p#ftr-copy-text.
+
+          © Copyright Eat Fit Kitchen. All Rights Reserved 2024.

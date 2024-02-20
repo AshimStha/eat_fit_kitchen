@@ -1,0 +1,20 @@
+extends layout 
+
+block main-content 
+  div#products_wrapper 
+    h1#productsTitle Our Products
+    div#add_product_btn
+      a.btn(href="/newProductForm") New Product
+    div#display_container
+      // for each loop to display every products
+      each item in list 
+        .product
+          img(src=item.image alt=item.name)
+          h3 #{item.name}
+          p #{item.description}
+          p Ingredients:
+            select.product_ingredients
+              each ingredient in item.ingredients
+                option= ingredient
+          span.price Price: $#{item.price}
+          button Add to Cart

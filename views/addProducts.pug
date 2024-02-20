@@ -1,0 +1,29 @@
+extends layout
+
+block main-content
+    // The products page
+    div#form_wrapper
+        h1#products-title Add Product
+        form(action="/newProductForm/add/submit", method="POST")
+            label(for="productName") Product Name 
+            span.required *
+            input#productName(type="text" name="productName", required)
+
+            label(for="description") Description 
+            span.required *
+            textarea#description(name="description" rows="4" cols="50", required)
+
+            label(for="ingredients") Ingredients 
+            span.required *
+            textarea#ingredients(name="ingredients" rows="4" cols="50", required)
+
+            label(for="price") Price 
+            span.required *
+            input#price(type="number" name="price" min="0", required)
+
+            label(for="image") Image 
+            span.required *
+            input#image(type="text" name="image")
+
+            #submit_btn_wrapper
+                button(type="submit") Add Product
