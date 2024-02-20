@@ -34,7 +34,7 @@ The dot env file was added to secure the DB host information to be used in the a
 
 ### Products
 
-Note: These are the dummy products. The last 3 products depict the addition of new products.
+Note: These are the dummy products. The last 3 products in the application depict the addition of new products.
 
 - https://unsplash.com/photos/vegetable-salad-on-white-ceramic-plate-xeTv9N2FjXA
 
